@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat px-3 md:px-0"
       style={{
         backgroundImage: `url(${bgImage})`,
     backgroundPosition: "center",
