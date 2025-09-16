@@ -25,7 +25,7 @@ function InputBox({
           className="outline-none w-full bg-transparent border border-gray-400 rounded-lg py-1.5 pl-2"
           type="number"
           placeholder="Amount"
-          value={amount}
+          value={amount || ""} 
           disabled={amountDisable}
           onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
         />
@@ -36,7 +36,7 @@ function InputBox({
   
         
         <select
-          className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
+          className="rounded-lg px-1 py-1 bg-[#0d6380] text-white cursor-pointer outline-none"
           value={selectCurrency}
           disabled={currencyDisable}
           onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)} // ✅ use string, not Number()
